@@ -14,7 +14,10 @@ class ViewController: UIViewController {
         super.viewDidLoad()
         // Do any additional setup after loading the view.
     }
-
+    
+    @IBAction func Gacha() {
+        self.performSegue(withIdentifier: "result", sender: nil)        //performSegueはコードだけで画面遷移するときに使う
+    }
 
 }
 
